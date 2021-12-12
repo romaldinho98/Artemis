@@ -1,0 +1,6 @@
+@import "variables.scss";
+
+.container {
+  max-width: $breakpoint-lg;
+  margin: 0 auto;
+}
