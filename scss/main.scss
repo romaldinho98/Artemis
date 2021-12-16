@@ -536,7 +536,7 @@ p {
 	&__columns {
 		position: relative;
 		max-width: 885px;
-		height: 511px;
+		height: 510px;
 		background-position: center;
 		background-repeat: no-repeat;
 		display: flex;
@@ -545,7 +545,11 @@ p {
 	}
 
 	&__column-left {
-		z-index: 2;
+		padding-right: 50px;
+		background-position: right;
+		background-color: #F8F8F8;
+		border-right: none;
+		border-radius: 26px 0px 0px 26px;
 		background-image: url("../images/contact-background_blue.png");
 		padding-left: 40px;
 		width: 40%;
@@ -582,10 +586,10 @@ p {
 
 	&__column-right {
 		background-color: #F8F8F8;
-		border-radius: 10px;
-		padding-left: 30px;
+		border-radius: 0px 20px 20px 0px;
+		padding-left: 40px;
 		padding-right: 42px;
-		width: 80%;
+		width: 60%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -601,9 +605,8 @@ p {
 			width: 465px;
 			background-color: $bg-color-1;
 			margin-bottom: 49px;
-			// padding-bottom: 9px;
 			line-height: 31px;
-			::placeholder {
+			&::placeholder {
 				color: #545454;
 			}
 		}

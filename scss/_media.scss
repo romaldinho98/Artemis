@@ -46,6 +46,7 @@ $mainWidthExtraSmall: 280px;
 	}
 	
 	.statistic-block {
+		padding: 290px 0 80px 0;
 		height: 100%;
 		&__container {
 			width: 374px;
@@ -129,15 +130,13 @@ $mainWidthExtraSmall: 280px;
 			height: 900px;
 	
 			&:after {
+				position:absolute;
 				background-image: url("../images/advisory-serveces-image.png");
-				left: initial;
-				right: initial;
-				bottom: initial;
 				background-position: center;
-				top: 22%; 
-				width: 100%;
+				top: 25%; 
+				width: 75%;
 				background-size: contain;
-				// height: 675px;
+				height: 675px;
 			}
 		}
 
@@ -151,8 +150,8 @@ $mainWidthExtraSmall: 280px;
 				right: initial;
 				bottom: initial;
 				background-position: center;
-				top: 27%; 
-				width: 100%;
+				top: 25%; 
+				width: 75%;
 				background-size: contain;
 				// height: 675px;
 			}
@@ -383,6 +382,69 @@ $mainWidthExtraSmall: 280px;
 		padding: 140px 0 80px 0;
 		&__container {
 			width: 374px;
+		}
+	}
+
+	.contact {
+		&__columns {
+			max-width: 375px;
+			height: 929px;
+			flex-direction: column-reverse;
+			align-items: center;
+		}
+		&__column-left {
+			position: relative;
+			padding-left: 59px;
+			padding-right: 59px;
+			height: 442px;
+			width: 375px;
+			background-image: url("../images/contact-background_mb.png");
+			border-radius: 0px;
+			&:after {
+				position: absolute;
+				border-top: 2px solid #D0D0D0;
+				content: "";
+				width: 45px;
+				height: 2px;
+				border-radius: 1px
+			}
+		}
+		&__column-right {
+			top: -5px;
+			position: absolute;
+			flex-direction: column;
+			padding-left: 24px;
+    		padding-right: 24px;
+			border-radius: 10px;
+			height: 508px;
+			width: 343px;
+		}
+		&__form {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			input {
+				width: 295px;
+			}
+		}	
+		&__subtitle {
+			margin-top: 45px;
+			margin-bottom: 23px;
+			&-dark {
+				margin-top: 60px;
+				text-align: center;
+				margin-bottom: 47px;
+			}
+		}
+		&__button {
+			text-align: center;
+			transform: translate(0%, 0%);
+		}
+		&__information {
+			&:last-child {
+				margin-bottom: 60px;
+			}
 		}
 	}
 
