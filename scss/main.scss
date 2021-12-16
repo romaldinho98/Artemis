@@ -537,7 +537,6 @@ p {
 		position: relative;
 		max-width: 885px;
 		height: 511px;
-		background-image: url("../images/contact-background.png");
 		background-position: center;
 		background-repeat: no-repeat;
 		display: flex;
@@ -546,6 +545,8 @@ p {
 	}
 
 	&__column-left {
+		z-index: 2;
+		background-image: url("../images/contact-background_blue.png");
 		padding-left: 40px;
 		width: 40%;
 		display: flex;
@@ -580,9 +581,11 @@ p {
 	}
 
 	&__column-right {
+		background-color: #F8F8F8;
+		border-radius: 10px;
 		padding-left: 30px;
 		padding-right: 42px;
-		width: 60%;
+		width: 80%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
