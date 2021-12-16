@@ -130,11 +130,15 @@ $mainWidthExtraSmall: 280px;
 			height: 900px;
 	
 			&:after {
+				left: 0;
+				right: 0;
+				margin: 0 auto;
 				position:absolute;
 				background-image: url("../images/advisory-serveces-image.png");
 				background-position: center;
 				top: 25%; 
-				width: 75%;
+				max-width: 700px;
+				width: 100%;
 				background-size: contain;
 				height: 675px;
 			}
@@ -146,14 +150,15 @@ $mainWidthExtraSmall: 280px;
 
 			&:after {
 				background-image: url("../images/outcome-based-image.png");
-				left: initial;
-				right: initial;
-				bottom: initial;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
 				background-position: center;
 				top: 25%; 
-				width: 75%;
+				max-width: 700px;
+				width: 100%;
 				background-size: contain;
-				// height: 675px;
+				height: 675px;
 			}
 	
 			.section-block__content {
