@@ -79,6 +79,10 @@ p {
 .menu {
 	display: flex;
 
+	&__icon {
+		display: none;
+	}
+
 	&__inner-wrapper {
 		position: absolute;
 		display: none;
@@ -139,9 +143,9 @@ p {
 			margin-top: 12px;
 			margin-bottom: 12px;
 			&:hover {
-			color: $text-color-1;
-			font-weight: 600;
-			}
+				color: $text-color-1;
+				font-weight: 600;
+				}
 		}
 		&-descr {
 			font-size: 14px;
@@ -295,9 +299,10 @@ p {
 		background-position: calc(50% + 250px);
 		position: absolute;
 		left: 0;
-		right: 0;
+		// right: 0;
 		bottom: 0;
 		top: 0;
+		width: 100%;
 		content: ' ';
 	}
 
