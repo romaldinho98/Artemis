@@ -380,6 +380,8 @@ p {
 		font-weight: 600;
 		font-size: 18px;
 
+		cursor: pointer;
+
 		&:not(:last-child) {
 			margin-right: 20px;
 		}

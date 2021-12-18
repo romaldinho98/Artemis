@@ -143,8 +143,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	});
 
 	const mobileSearchBtn = document.querySelector(".mobile-menu__search-button");
-	const mobileSearchModal = document.querySelector(".search-modal");
-	const mobileSearchModal = document.querySelector(".search-modal");
+	const mobileSearchModal = document.querySelector(".search-modal")
 
 	const toggleMenu = function() {
 		mobileSearchModal.classList.toggle('d-show');
