@@ -145,27 +145,6 @@ window.addEventListener('DOMContentLoaded', function() {
 	const mobileSearchBtn = document.querySelector(".mobile-menu__search-button");
 	const mobileSearchModal = document.querySelector(".search-modal")
 
-	// mobileSearchBtn.addEventListener("click", () => {
-	// 	mobileSearchModal.classList.toggle("d-none");
-	// 	mobileMenuElement.classList.toggle("mobile-menu-show");
-	// })
-
-	// function closeModal() {
-    //     mobileSearchModal.classList.toggle("d-none");
-    //     document.body.style.overflow = '';
-    // }
-
-    // // закрывать окно если кликать в область не модального окна
-    // mobileSearchModal.addEventListener('click', (e) => {
-    //     if (e.target.className != 'search-modal') {
-    //         closeModal();
-	// 		console.log("Hello");
-    //     }
-    // });
-
-	// const btnMenu = document.querySelector('.btn');
-	// const menu = document.querySelector('.menu');
-
 	const toggleMenu = function() {
 		mobileSearchModal.classList.toggle('d-show');
 		mobileMenuElement.classList.remove("mobile-menu-show");
