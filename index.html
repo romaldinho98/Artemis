@@ -80,7 +80,7 @@
 </header>
 
 <main>
-	<section class="section-block section-block__indent">
+	<section class="section-block section-block__indent section-block__promo">
 		<div class="container section-block__container">
 				<div class="section-block__content section-block__content-wide">
 					<h1>Creating Positive Impact with Artemis</h1>
@@ -121,8 +121,8 @@
 	<section class="section-block section-block__secondary ">
 		<div class="container section-block__container">
 			<div class="section-block__content">
-					<h2>Outcome-based Funding</h2>
-					<p>For our individual or institutional donors and NGO receiver teams, our Artemis services can provide the focused precision in locating, connecting, and enabling the most specific projects for your funds, along with the most transparent and measurable, data-driven results for you & your stakeholders. We cater to projects in all stages: Pre-funding, Already funded.</p>
+					<h2 class="section-block__subtitle">Outcome-based Funding</h2>
+					<p class="section-block__subtitle-content-text">For our individual or institutional donors and NGO receiver teams, our Artemis services can provide the focused precision in locating, connecting, and enabling the most specific projects for your funds, along with the most transparent and measurable, data-driven results for you & your stakeholders. We cater to projects in all stages: Pre-funding, Already funded.</p>
 					<a href="#" class="section-block__button section-block__button_primary section-block__button_mobile-first">Contact Us</a>
 			</div>
 		</div>
@@ -141,76 +141,78 @@
 	<section class="gallery">
 		<div class="container">
 			<h2 class="gallery__title">What’s New?</h2>
-			<div id="image-slider" class="splide">
+			<div class="gallery__slider-container">
+				<div id="image-slider" class="splide">
 
-				<div class="splide__arrows">
-					<button class="splide__arrow splide__arrow--prev">
-						<svg width="50" height="49" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<g opacity="0.6">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M49.0702 24.5C49.0702 10.969 38.1012 0 24.5702 0C11.0392 0 0.0701904 10.969 0.0701904 24.5C0.0701904 38.031 11.0392 49 24.5702 49C38.1012 49 49.0702 38.031 49.0702 24.5ZM25.7844 32.4734L18.8938 25.5828C18.2957 24.9848 18.2957 24.0154 18.8937 23.4173L25.7843 16.5267C26.3822 15.9287 27.3518 15.9287 27.9498 16.5267C28.5478 17.1246 28.5478 18.0942 27.9498 18.6922L22.1419 24.5001L27.9498 30.308C28.9171 31.2753 28.219 32.922 26.8671 32.922C26.4753 32.922 26.0834 32.7724 25.7844 32.4734Z" fill="#C0C2C3"/>
-							</g>
-						</svg>
-					</button>
-					<button class="splide__arrow splide__arrow--next">
-						<svg width="50" height="49" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M0.92981 24.5C0.92981 10.969 11.8988 0 25.4298 0C38.9608 0 49.9298 10.969 49.9298 24.5C49.9298 38.031 38.9608 49 25.4298 49C11.8988 49 0.92981 38.031 0.92981 24.5ZM24.2156 32.4734L31.1062 25.5828C31.7043 24.9848 31.7043 24.0154 31.1063 23.4173L24.2157 16.5267C23.6178 15.9287 22.6482 15.9287 22.0502 16.5267C21.4522 17.1246 21.4522 18.0942 22.0502 18.6922L27.8581 24.5001L22.0502 30.308C21.0829 31.2753 21.781 32.922 23.1329 32.922C23.5247 32.922 23.9166 32.7724 24.2156 32.4734Z" fill="#FFCC2A"/>
-						</svg>							
-					</button>
-				</div>
-
-				<div class="splide__track">
-					<ul class="splide__list">
-						<li class="splide__slide">
-							<div class="splide__item">
-								<div class="gallery__item">
-									<img src="images/video-1.png">
+					<div class="splide__arrows">
+						<button class="splide__arrow splide__arrow--prev">
+							<svg width="50" height="49" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g opacity="0.6">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M49.0702 24.5C49.0702 10.969 38.1012 0 24.5702 0C11.0392 0 0.0701904 10.969 0.0701904 24.5C0.0701904 38.031 11.0392 49 24.5702 49C38.1012 49 49.0702 38.031 49.0702 24.5ZM25.7844 32.4734L18.8938 25.5828C18.2957 24.9848 18.2957 24.0154 18.8937 23.4173L25.7843 16.5267C26.3822 15.9287 27.3518 15.9287 27.9498 16.5267C28.5478 17.1246 28.5478 18.0942 27.9498 18.6922L22.1419 24.5001L27.9498 30.308C28.9171 31.2753 28.219 32.922 26.8671 32.922C26.4753 32.922 26.0834 32.7724 25.7844 32.4734Z" fill="#C0C2C3"/>
+								</g>
+							</svg>
+						</button>
+						<button class="splide__arrow splide__arrow--next">
+							<svg width="50" height="49" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0.92981 24.5C0.92981 10.969 11.8988 0 25.4298 0C38.9608 0 49.9298 10.969 49.9298 24.5C49.9298 38.031 38.9608 49 25.4298 49C11.8988 49 0.92981 38.031 0.92981 24.5ZM24.2156 32.4734L31.1062 25.5828C31.7043 24.9848 31.7043 24.0154 31.1063 23.4173L24.2157 16.5267C23.6178 15.9287 22.6482 15.9287 22.0502 16.5267C21.4522 17.1246 21.4522 18.0942 22.0502 18.6922L27.8581 24.5001L22.0502 30.308C21.0829 31.2753 21.781 32.922 23.1329 32.922C23.5247 32.922 23.9166 32.7724 24.2156 32.4734Z" fill="#FFCC2A"/>
+							</svg>							
+						</button>
+					</div>
+	
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide">
+								<div class="splide__item">
+									<div class="gallery__item">
+										<img src="images/video-1.png">
+									</div>
+									<div class="gallery__content">Merdeka Belajar & Sekolah Alternatif - Artemis Impact Podcast #5</div>
 								</div>
-								<div class="gallery__content">Merdeka Belajar & Sekolah Alternatif - Artemis Impact Podcast #5</div>
-							</div>
-						</li>
-						<li class="splide__slide">
-							<div class="splide__item">	
-								<div class="gallery__item">
-									<img src="images/video-2.png">
+							</li>
+							<li class="splide__slide">
+								<div class="splide__item">	
+									<div class="gallery__item">
+										<img src="images/video-2.png">
+									</div>
+									<div class="gallery__content">We Are Watching You - Artemis Impact Podcast #4</div>
 								</div>
-								<div class="gallery__content">We Are Watching You - Artemis Impact Podcast #4</div>
-							</div>
-						</li>
-						<li class="splide__slide">
-							<div class="splide__item">
-								<div class="gallery__item">
-									<img src="images/video-3.png">
+							</li>
+							<li class="splide__slide">
+								<div class="splide__item">
+									<div class="gallery__item">
+										<img src="images/video-3.png">
+									</div>
+									<div class="gallery__content">NGO dan Komunitas Lingkungan di Indonesia - Artemis Impact Podcast #3</div>
 								</div>
-								<div class="gallery__content">NGO dan Komunitas Lingkungan di Indonesia - Artemis Impact Podcast #3</div>
-							</div>
-						</li>
-						<li class="splide__slide">
-							<div class="splide__item">
-								<div class="gallery__item">
-									<img src="images/video-1.png">
+							</li>
+							<li class="splide__slide">
+								<div class="splide__item">
+									<div class="gallery__item">
+										<img src="images/video-1.png">
+									</div>
+									<div class="gallery__content">Merdeka Belajar & Sekolah Alternatif - Artemis Impact Podcast #5</div>
 								</div>
-								<div class="gallery__content">Merdeka Belajar & Sekolah Alternatif - Artemis Impact Podcast #5</div>
-							</div>
-						</li>
-						<li class="splide__slide">
-							<div class="splide__item">	
-								<div class="gallery__item">
-									<img src="images/video-2.png">
+							</li>
+							<li class="splide__slide">
+								<div class="splide__item">	
+									<div class="gallery__item">
+										<img src="images/video-2.png">
+									</div>
+									<div class="gallery__content">We Are Watching You - Artemis Impact Podcast #4</div>
 								</div>
-								<div class="gallery__content">We Are Watching You - Artemis Impact Podcast #4</div>
-							</div>
-						</li>
-						<li class="splide__slide">
-							<div class="splide__item">
-								<div class="gallery__item">
-									<img src="images/video-3.png">
+							</li>
+							<li class="splide__slide">
+								<div class="splide__item">
+									<div class="gallery__item">
+										<img src="images/video-3.png">
+									</div>
+									<div class="gallery__content">NGO dan Komunitas Lingkungan di Indonesia - Artemis Impact Podcast #3</div>
 								</div>
-								<div class="gallery__content">NGO dan Komunitas Lingkungan di Indonesia - Artemis Impact Podcast #3</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-		  </div>
+							</li>
+						</ul>
+					</div>
+			  </div>
+			</div>
 		</div>
 	</section>
 
@@ -381,9 +383,27 @@
 	</div>
 </footer>
 
+<div data-close class="search-modal d-none">
+	<div class="search-modal__input">
+		<input type="text" placeholder="Search" maxlength="30">
+	</div>
+
+	<ul class="search-modal__tags">
+		<li class="search-modal__tag">COVID-19</li>
+		<li class="search-modal__tag search-modal__tag-active">Theory of Change</li>
+		<li class="search-modal__tag">Volunteers</li>
+		<li class="search-modal__tag">Impact Measurement</li>
+		<li class="search-modal__tag">NGOs</li>
+		<li class="search-modal__tag">Peduli Pangan</li>
+		<li class="search-modal__tag">Artemis Impact App</li>
+		<li class="search-modal__tag">Social Enterprise</li>
+		<li class="search-modal__tag">Social Enterprise</li>
+		<li class="search-modal__tag">Uncategorized</li>
+	</ul>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
 <script src="js/script.js"></script>
-
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', function() {
 	var splide = new Splide( '.splide', {
 		type   : 'loop',
-		perPage: 1,
+		perPage: 3,
 		focus  : 'left',
 		arrowPath: 'm15.5 0.932-4.3 4.38...',
 		rewind: true
@@ -80,10 +80,10 @@ window.addEventListener('DOMContentLoaded', function() {
 	
 	document.body.appendChild(mobileMenuElement);
 	
-	mobileMenuElement.innerHTML += `
+	mobileMenuElement.insertAdjacentHTML('beforeend', `
 	<div class="mobile-menu-icons">
 		<div>
-			<ul class="mobile-menu__menu-items mobile-menu__menu-items-horizontal">
+			<ul class="mobile-menu__menu-items">
 			<li>
 				<a href="#">
 					<svg width="32" height="32" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -134,12 +134,58 @@ window.addEventListener('DOMContentLoaded', function() {
 			<div class="mobile-menu__language-select">ENG</div>
 		</div>
 	</div>
-	`;
+	`);
 	
 	const mobileMenuIcon = document.querySelector(".header .menu__icon");
 	mobileMenuIcon.addEventListener("click", () => {
 	  mobileMenuElement.classList.toggle("mobile-menu-show");
 	  mobileMenuIcon.classList.toggle("menu__icon_active");   
+	});
+
+	const mobileSearchBtn = document.querySelector(".mobile-menu__search-button");
+	const mobileSearchModal = document.querySelector(".search-modal")
+
+	// mobileSearchBtn.addEventListener("click", () => {
+	// 	mobileSearchModal.classList.toggle("d-none");
+	// 	mobileMenuElement.classList.toggle("mobile-menu-show");
+	// })
+
+	// function closeModal() {
+    //     mobileSearchModal.classList.toggle("d-none");
+    //     document.body.style.overflow = '';
+    // }
+
+    // // закрывать окно если кликать в область не модального окна
+    // mobileSearchModal.addEventListener('click', (e) => {
+    //     if (e.target.className != 'search-modal') {
+    //         closeModal();
+	// 		console.log("Hello");
+    //     }
+    // });
+
+	// const btnMenu = document.querySelector('.btn');
+	// const menu = document.querySelector('.menu');
+
+	const toggleMenu = function() {
+		mobileSearchModal.classList.toggle('d-show');
+		mobileMenuElement.classList.remove("mobile-menu-show");
+		mobileMenuIcon.classList.remove("menu__icon_active");
+	}
+
+	mobileSearchBtn.addEventListener('click', function(e) {
+		e.stopPropagation();
+		toggleMenu();
+	});
+
+	document.addEventListener('click', function(e) {
+		const target = e.target;
+		const its_menu = target == mobileSearchModal || mobileSearchModal.contains(target);
+		const its_btnMenu = target == mobileSearchBtn;
+		const menu_is_active = mobileSearchModal.classList.contains('d-show');
+		
+		if (!its_menu && !its_btnMenu && menu_is_active) {
+			toggleMenu();
+		}
 	});
 	
 });

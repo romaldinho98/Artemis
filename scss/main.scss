@@ -702,5 +702,82 @@ p {
 	}
 }
 
+.mobile-menu {
+	display: none;
+}
+
+.d-none {
+	display: none;
+}
+
+.d-show {
+	display: block;
+}
+
+.search-modal {
+	position: fixed;
+	top: 177px;
+	left: 16px;
+	right: 16px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.0826049);
+	border-radius: 5px;
+	padding: 60px 16px;
+	z-index: 200;
+
+	&__input {
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			background-image: url("../images/icons/search.svg"); 
+			background-repeat: no-repeat;
+			background-position: center center;
+			right: 0;
+			top: 0px;
+			cursor: pointer;
+		}
+}	
+
+	input {
+		padding-bottom: 2px;
+		font-family: Open Sans;
+		border: none;
+		outline: none;
+		border-bottom: 1px solid $text-color-2;
+		font-size: 16px;
+		line-height: 22px;
+		width: 100%;
+		&::placeholder {
+			color: #545454;
+			max-width: 90%;
+		}
+	}
+
+
+	&__tags {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 32px;
+	}
+	&__tag {
+		cursor: pointer;
+		background: #EAEAEA;
+		border-radius: 3px;
+		margin-right: 10px;
+		margin-top: 10px;
+		font-size: 12px;
+		line-height: 16px;
+		color: $text-color-2;
+		padding: 5px 8px;
+		&-active {
+			background: $accent-color;
+			color: $text-color-3;
+		}
+	}
+}
+
 @import "media";
 
